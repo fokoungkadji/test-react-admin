@@ -1,0 +1,38 @@
+$primary-color: #FF7120;
+$secondary-color: #0A0B2E;
+$background-color: #f5f5f5;
+$backgroundsecond-color: rgba(169, 169, 169, 0.127);
+$navbar-color: #F1EDFF;
+
+
+// couleur pour les texte d'information et les success message
+$textinfo-color : gray;
+
+// couleur pour les message d'érreur
+$texterror-color : #ff0000;
+$textsuccess-color : #3c763db1;
+
+// couleur pour les ombre 
+$ombre-color : rgba(201, 201, 201, 0.47);
+$Ombre : 2px 4px 10px 1px $ombre-color;
+$secondary-ombre :0 2px 8px rgba(0, 0, 0, 0.1);
+
+// couleur pour les lien active
+$Activelien-color : #fffb2228;
+
+//taille de police
+
+$defaul-font-size : 1rem;
+$font-title : 2rem;
+$font-paragr : 1.5rem;
+$title-popup-font-size : $font-paragr ;
+$font-link-and-button : $font-paragr;
+
+// magin*******************
+
+$margin-bottom-title: 20px;
+$margin-bottom: 10px;
+
+// les bordures**********
+
+$border: 0.5px solid rgb(230, 227, 227);

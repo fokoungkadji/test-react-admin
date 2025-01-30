@@ -1,0 +1,26 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "title": "The Future of AI",
+            "author": {
+                "id": 1,
+                "name": "John Doe"
+            },
+            "publishedAt": "2024-07-05T10:30:00Z",
+            "status": "published",
+            "contenu": "I am a software engineer passionate about artificial intelligence and its potential to revolutionize the world."
+        }
+    ],
+    "users": [
+        {
+            "id": "1",
+            "name": "John Doe",
+            "email": "johndoe@example.com",
+            "phone": "+1 (555) 555-1212",
+            "adresse": "123 Main St, Anytown, CA 12345",
+            "nationalité": "Américaine",
+            "dateNaissance": "1990-01-01"
+        }
+    ]
+}
