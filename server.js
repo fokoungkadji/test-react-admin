@@ -1,15 +1,20 @@
 const jsonServer = require('json-server');
-const middleware = require('./middleware'); // Chemin vers votre fichier middleware
-const db = require('./data.json'); // Chemin vers votre fichier db.json
 const server = jsonServer.create();
-const router = jsonServer.router(db);
-const middlewares = [middleware]; // Tableau de vos fonctions middleware
+const router = jsonServer.router('db.json');
+const middlewares = jsonServer.defaults();
 
-server.use(middlewares); // Utilisation de votre middleware personnalisé
-server.use(jsonServer.defaults()); // Utilisation du middleware par défaut de json-server (important !)
+server.use(middlewares);
+
+// Middleware pour ajouter X-Total-Count
+server.use((req, res, next) => {
+  if (req.method === 'GET' && req.url.includes('/posts') || req.url.includes('/users')) {
+    const resources = router.db.get(req.url.split('?')[0]).value();
+    res.setHeader('X-Total-Count', resources.length);
+  }
+  next();
+});
+
 server.use(router);
-
-const port = process.env.PORT || 3001;
-server.listen(port, () => {
-  console.log(`JSON Server est en cours d'exécution sur le port ${port}`);
+server.listen(3001, () => {
+  console.log('JSON Server is running on http://localhost:3001');
 });

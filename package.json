@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
-    "ra-data-fakerest": "^5.5.2",
     "ra-data-json-server": "^5.5.2",
     "react": "^19.0.0",
     "react-admin": "^5.5.2",
@@ -40,10 +39,10 @@
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "middleware.js",
-  "devDependencies": {
-    "json-server": "^1.0.0-beta.3"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
 }

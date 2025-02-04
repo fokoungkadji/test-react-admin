@@ -1,9 +1,9 @@
 import jsonServerProvider from "ra-data-json-server";
 
-export const dataProvider1= jsonServerProvider(
+export const dataProvider= jsonServerProvider(
   "http://localhost:3001"
 );
 
-export const dataProvider = jsonServerProvider(
+export const dataProvider1 = jsonServerProvider(
   "https://jsonplaceholder.typicode.com"
 );
