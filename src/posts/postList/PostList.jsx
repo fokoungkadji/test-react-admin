@@ -3,34 +3,29 @@ import * as React from 'react';
 import {
   Datagrid,
   List,
-  NumberField,
   ReferenceField,
-  ReferenceInput,
   TextField,
   EditButton,
   DateField,
-  BulkDeleteButton,
-  BulkUpdateButton,
-  SelectInput,
-  SelectField
+  BooleanField
 } from "react-admin";
 
-const PostFilter = (props) => (
-  <React.Fragment>
-    <ReferenceInput label="Author" source="userId" reference="users" {...props}>
-      <SelectInput optionText="name" />
-    </ReferenceInput>
-    <SelectInput
-      label="Status"
-      source="status"
-      choices={[
-        { id: 'published', name: 'Published' },
-        { id: 'draft', name: 'Draft' },
-      ]}
-      {...props}
-    />
-  </React.Fragment>
-);
+// const PostFilter = (props) => (
+//   <React.Fragment>
+//     <ReferenceInput label="Author" source="userId" reference="users" {...props}>
+//       <SelectInput optionText="name" />
+//     </ReferenceInput>
+//     <SelectInput
+//       label="Status"
+//       source="status"
+//       choices={[
+//         { id: 'published', name: 'Published' },
+//         { id: 'draft', name: 'Draft' },
+//       ]}
+//       {...props}
+//     />
+//   </React.Fragment>
+// );
 
 export const PostList = (props) => (
   <List {...props} perPage={10} sort={{ field: 'publishedAt', order: 'DESC' }} >
@@ -40,16 +35,7 @@ export const PostList = (props) => (
         <TextField source="name" />
       </ReferenceField>
       <DateField source="publishedAt" />
-
-      {/*  style de couleur conditionnel basé sur la valeur de status */}
-      <SelectField
-                source="status"
-                choices={[
-                    { id: 'published', name: 'Published' },
-                    { id: 'draft', name: 'Draft' },
-                    { id: 'pending', name: 'Pending' },
-                ]}
-            />
+      <BooleanField source="status" valueLabelTrue="published" valueLabelFalse="draft" />
       <EditButton />
     </Datagrid>
   </List>
