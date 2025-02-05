@@ -220,7 +220,7 @@
       "adresse": "Ulitsa Lenina, 15, Moscow, Russia",
       "nationalité": "Russe",
       "dateNaissance": "1975-03-21",
-      "status": "active"
+      "status": "inactive"
     },
     {
       "id": 7,
@@ -240,7 +240,7 @@
       "adresse": "Buenos Aires, Argentina",
       "nationalité": "Argentine",
       "dateNaissance": "1980-09-15",
-      "status": "active"
+      "status": "inactive"
     },
     {
       "id": 9,
@@ -250,7 +250,7 @@
       "adresse": "Singapore",
       "nationalité": "Singapourienne",
       "dateNaissance": "1998-04-28",
-      "status": "active"
+      "status": "inactive"
     },
     {
       "id": 10,
