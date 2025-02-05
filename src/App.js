@@ -4,7 +4,7 @@ import posts from './posts';
 import users from './users';
 import Dashboard from './dashboard/Dashboard';
 import authProvider from './authProvider';
-import { dataProvider } from './DataProvider';
+import { dataProvider, dataProvider1 } from './DataProvider';
 // import { lightTheme, darkTheme } from './theme';
 import {  createTheme } from '@mui/material/styles';
 // import { ThemeProvider } from '@mui/material/styles';

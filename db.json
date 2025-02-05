@@ -1,0 +1,393 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "The Future of AI",
+      "userId": 1,
+      "publishedAt": "2024-07-05T10:30:00Z",
+      "status": "published",
+      "contenu": "I am a software engineer passionate about artificial intelligence and its potential to revolutionize the world."
+    },
+    {
+      "id": 2,
+      "title": "Traveling to Japan",
+      "userId": 2,
+      "publishedAt": "2024-07-03T15:15:00Z",
+      "status": "published",
+      "contenu": "I'm a travel blogger and I'm excited to share my experiences from my recent trip to Japan."
+    },
+    {
+      "id": 3,
+      "title": "Healthy Recipes for Summer",
+      "userId": 3,
+      "publishedAt": "2024-07-08T09:45:00Z",
+      "status": "draft",
+      "contenu": "I'm a food enthusiast and I love to share healthy and delicious recipes."
+    },
+    {
+      "id": 4,
+      "title": "The Importance of Mindfulness",
+      "userId": 1,
+      "publishedAt": "2024-07-07T14:20:00Z",
+      "status": "published",
+      "contenu": "In this article, I'll discuss the benefits of mindfulness and how to incorporate it into your daily life."
+    },
+    {
+      "id": 5,
+      "title": "Exploring the Wonders of Nature",
+      "userId": 2,
+      "publishedAt": "2024-07-04T11:00:00Z",
+      "status": "draft",
+      "contenu": "I recently went on a hiking trip and I want to share my experiences with you."
+    },
+    {
+      "id": 6,
+      "title": "Les meilleurs outils pour développeurs en 2024",
+      "userId": 1,
+      "publishedAt": "2024-08-02T15:30:00Z",
+      "status": "published",
+      "contenu": "En tant que développeur, il est essentiel de connaître les meilleurs outils pour augmenter sa productivité. Dans cet article, je partage mes favoris..."
+    },
+    {
+      "id": 7,
+      "title": "Recette de gâteau au chocolat vegan",
+      "userId": 2,
+      "publishedAt": "2024-08-05T10:00:00Z",
+      "status": "published",
+      "contenu": "Un gâteau au chocolat délicieux et facile à réaliser, sans produits laitiers ni œufs. Parfait pour les gourmands et les amateurs de cuisine saine."
+    },
+    {
+      "id": 8,
+      "title": "Comment créer un jardin potager",
+      "userId": 4,
+      "publishedAt": "2024-08-08T14:20:00Z",
+      "status": "draft",
+      "contenu": "Vous rêvez d'un jardin potager ? Découvrez tous mes conseils pour cultiver vos propres légumes et aromates."
+    },
+    {
+      "id": 9,
+      "title": "Les bienfaits du yoga pour la santé mentale",
+      "userId": 5,
+      "publishedAt": "2024-08-10T16:00:00Z",
+      "status": "published",
+      "contenu": "Le yoga est bien plus qu'une simple activité physique. Découvrez comment il peut améliorer votre bien-être mental."
+    },
+    {
+      "id": 10,
+      "title": "Voyage en Islande : Guide complet",
+      "userId": 10,
+      "publishedAt": "2024-08-12T09:30:00Z",
+      "status": "published",
+      "contenu": "L'Islande est une destination unique en son genre. Découvrez mes conseils pour organiser votre voyage et profiter de tous les paysages magnifiques qu'offre ce pays."
+    },
+    {
+      "id": 11,
+      "title": "Les meilleurs endroits pour surfer en Europe",
+      "userId": 22,
+      "publishedAt": "2024-08-15T10:30:00Z",
+      "status": "published",
+      "contenu": "Découvrez les spots de surf les plus prisés d'Europe pour profiter de vagues parfaites. [Image of Surfer riding a wave]"
+    },
+    {
+      "id": 12,
+      "title": "Recettes de cuisine végétalienne pour tous les jours",
+      "userId": 19,
+      "publishedAt": "2024-08-18T15:15:00Z",
+      "status": "published",
+      "contenu": "Des idées de repas végétaliens simples et savoureux pour toute la famille. [Image of a colorful vegan bowl]"
+    },
+    {
+      "id": 13,
+      "title": "Comment créer un jardin zen dans votre intérieur",
+      "userId": 20,
+      "publishedAt": "2024-08-20T14:20:00Z",
+      "status": "published",
+      "contenu": "Apportez la sérénité chez vous avec ces conseils pour aménager un petit coin de paradis zen. [Image of a zen garden]"
+    },
+    {
+      "id": 14,
+      "title": "Les bienfaits du yoga pour les seniors",
+      "userId": 4,
+      "publishedAt": "2024-08-22T16:00:00Z",
+      "status": "published",
+      "contenu": "Le yoga est une activité physique adaptée à tous les âges. Découvrez ses bienfaits pour les personnes âgées. [Image of elderly people doing yoga]"
+    },
+    {
+      "id": 15,
+      "title": "Les meilleures destinations pour un road trip en Europe",
+      "userId": 12,
+      "publishedAt": "2024-08-24T09:30:00Z",
+      "status": "published",
+      "contenu": "Partez à l'aventure en voiture à travers l'Europe ! Découvrez les routes les plus spectaculaires et les paysages à couper le souffle. [Image of a road trip in Europe]"
+    },
+    {
+      "id": 16,
+      "title": "Les meilleures destinations pour un road trip en Italie",
+      "userId": 2,
+      "publishedAt": "2024-08-25T11:00:00Z",
+      "status": "published",
+      "contenu": "Parcourez les routes italiennes et découvrez des paysages à couper le souffle. De Rome à la Sicile, en passant par la Toscane, l'Italie a tant à offrir. [Image of Tuscany landscape]"
+    },
+    {
+      "id": 17,
+      "title": "Comment créer un site web sans code",
+      "userId": 6,
+      "publishedAt": "2024-08-27T14:20:00Z",
+      "status": "published",
+      "contenu": "Vous n'avez pas de compétences en programmation ? Découvrez comment créer votre propre site web grâce à ces outils no-code. [Image of website builder interface]"
+    },
+    {
+      "id": 18,
+      "title": "Recettes de smoothies pour une détox",
+      "userId": 8,
+      "publishedAt": "2024-08-29T09:30:00Z",
+      "status": "published",
+      "contenu": "Faites le plein de vitamines et d'énergie avec ces recettes de smoothies détox. [Image of a green smoothie]"
+    },
+    {
+      "id": 19,
+      "title": "Les bienfaits du yoga pour la flexibilité",
+      "userId": 9,
+      "publishedAt": "2024-08-31T16:00:00Z",
+      "status": "published",
+      "contenu": "Améliorez votre flexibilité grâce à ces postures de yoga simples et efficaces. [Image of a yoga pose]"
+    },
+    {
+      "id": 20,
+      "title": "Les meilleures applications de productivité pour étudiants",
+      "userId": 10,
+      "publishedAt": "2024-09-02T11:30:00Z",
+      "status": "published",
+      "contenu": "Découvrez les applications indispensables pour vous aider à organiser votre travail et à améliorer votre productivité. [Image of a student studying with a laptop]"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "phone": "+1 (555) 555-1212",
+      "adresse": "123 Main St, Anytown, CA 12345",
+      "nationalité": "Américaine",
+      "dateNaissance": "1990-01-01",
+      "status": "inactive"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "janesmith@example.com",
+      "phone": "+44 20 8123 4567",
+      "adresse": "10 Downing Street, London, SW1A 2AA",
+      "nationalité": "Britannique",
+      "dateNaissance": "1985-05-15",
+      "status": "inactive"
+    },
+    {
+      "id": 3,
+      "name": "Akira Tanaka",
+      "email": "akirat@example.co.jp",
+      "phone": "+81 3-1234-5678",
+      "adresse": "123 Shinjuku, Tokyo, 160-0022",
+      "nationalité": "Japonaise",
+      "dateNaissance": "1992-11-22",
+      "status": "inactive"
+    },
+    {
+      "id": 4,
+      "name": "Emily Chen",
+      "email": "emilychen@example.com",
+      "phone": "+86 138 1234 5678",
+      "adresse": "123 Shanghai Road, Shanghai, China",
+      "nationalité": "Chinoise",
+      "dateNaissance": "1995-03-18",
+      "status": "active"
+    },
+    {
+      "id": 5,
+      "name": "David Martinez",
+      "email": "davidmartinez@example.com",
+      "phone": "+52 55 5555 5555",
+      "adresse": "Avenida Revolución, Mexico City, Mexico",
+      "nationalité": "Mexicaine",
+      "dateNaissance": "1988-07-11",
+      "status": "active"
+    },
+    {
+      "id": 6,
+      "name": "Alexei Petrov",
+      "email": "alexei.petrov@mail.ru",
+      "phone": "+7 925 123 4567",
+      "adresse": "Ulitsa Lenina, 15, Moscow, Russia",
+      "nationalité": "Russe",
+      "dateNaissance": "1975-03-21",
+      "status": "active"
+    },
+    {
+      "id": 7,
+      "name": "Aisha Patel",
+      "email": "aisha.patel@gmail.com",
+      "phone": "+91 98765 43210",
+      "adresse": "Mumbai, Maharashtra, India",
+      "nationalité": "Indienne",
+      "dateNaissance": "1992-11-05",
+      "status": "active"
+    },
+    {
+      "id": 8,
+      "name": "Carlos Hernandez",
+      "email": "carlos.hernandez@gmail.com",
+      "phone": "+54 11 4321 5678",
+      "adresse": "Buenos Aires, Argentina",
+      "nationalité": "Argentine",
+      "dateNaissance": "1980-09-15",
+      "status": "active"
+    },
+    {
+      "id": 9,
+      "name": "Maria Lee",
+      "email": "maria.lee@gmail.com",
+      "phone": "+65 6543 2109",
+      "adresse": "Singapore",
+      "nationalité": "Singapourienne",
+      "dateNaissance": "1998-04-28",
+      "status": "active"
+    },
+    {
+      "id": 10,
+      "name": "Ahmed Ali",
+      "email": "ahmed.ali@gmail.com",
+      "phone": "+20 123 456 7890",
+      "adresse": "Le Caire, Égypte",
+      "nationalité": "Égyptienne",
+      "dateNaissance": "1972-06-12",
+      "status": "active"
+    },
+    {
+      "id": 11,
+      "name": "Yumi Lee",
+      "email": "yumi.lee@gmail.com",
+      "phone": "+82 10 1234 5678",
+      "adresse": "Séoul, Corée du Sud",
+      "nationalité": "Coréenne du Sud",
+      "dateNaissance": "1997-02-14",
+      "status": "active"
+    },
+    {
+      "id": 12,
+      "name": "Ahmed Hassan",
+      "email": "ahmed.hassan@gmail.com",
+      "phone": "+20 112 345 6789",
+      "adresse": "Le Caire, Égypte",
+      "nationalité": "Égyptienne",
+      "dateNaissance": "1985-05-10",
+      "status": "active"
+    },
+    {
+      "id": 13,
+      "name": "David Johnson",
+      "email": "david.johnson@gmail.com",
+      "phone": "+1 202 555 0123",
+      "adresse": "New York, USA",
+      "nationalité": "Américaine",
+      "dateNaissance": "1978-07-04",
+      "status": "active"
+    },
+    {
+      "id": 14,
+      "name": "Aiko Suzuki",
+      "email": "aiko.suzuki@gmail.com",
+      "phone": "+81 80 1234 5678",
+      "adresse": "Tokyo, Japon",
+      "nationalité": "Japonaise",
+      "dateNaissance": "1999-12-25",
+      "status": "active"
+    },
+    {
+      "id": 15,
+      "name": "robin alan",
+      "email": "robin.alan@gmail.com",
+      "phone": "+237 10-1234-5678",
+      "adresse": "Seoul",
+      "nationalité": "Sud",
+      "dateNaissance": "1999-02-14",
+      "status": "active"
+    },
+    {
+      "id": 16,
+      "name": "Ahmed Al-Khalili",
+      "email": "ahmed.alkhalili@gmail.com",
+      "phone": "+971 50 123 4567",
+      "adresse": "Dubai, United Arab Emirates",
+      "nationalité": "Émiratie",
+      "dateNaissance": "1985-06-23",
+      "status": "active"
+    },
+    {
+      "id": 17,
+      "name": "Maria Garcia",
+      "email": "maria.garcia@gmail.com",
+      "phone": "+34 654 321 789",
+      "adresse": "Madrid, Spain",
+      "nationalité": "Espagnole",
+      "dateNaissance": "1999-11-11",
+      "status": "active"
+    },
+    {
+      "id": 18,
+      "name": "Peter Müller",
+      "email": "peter.mueller@gmail.com",
+      "phone": "+49 176 123 4567",
+      "adresse": "Berlin, Germany",
+      "nationalité": "Allemande",
+      "dateNaissance": "1978-08-05",
+      "status": "active"
+    },
+    {
+      "id": 19,
+      "name": "Ayisha Patel",
+      "email": "ayisha.patel@gmail.com",
+      "phone": "+91 98765 43210",
+      "adresse": "Mumbai, Maharashtra, India",
+      "nationalité": "Indienne",
+      "dateNaissance": "1992-11-05",
+      "status": "active"
+    },
+    {
+      "id": 20,
+      "name": "patou lemair",
+      "email": "patou.lemair@gmail.com",
+      "phone": "+222 98765 43210",
+      "adresse": " India",
+      "nationalité": "Indienne",
+      "dateNaissance": "2025-11-05",
+      "status": "active"
+    },
+    {
+      "id": 21,
+      "name": " Patel",
+      "email": "patel@gmail.com",
+      "phone": "+263 98765 43210",
+      "adresse": "Mumbai",
+      "nationalité": "Mumbaienne",
+      "dateNaissance": "1982-11-05",
+      "status": "active"
+    },
+    {
+      "id": 22,
+      "name": "Ayisha",
+      "email": "ayisha@gmail.com",
+      "phone": "+237 98765 43210",
+      "adresse": "Maharashtra",
+      "nationalité": "Indienne",
+      "dateNaissance": "1962-11-05",
+      "status": "active"
+    },
+    {
+      "name": "kadji bezout",
+      "email": "kadjibezout@gmail.com",
+      "phone": "+237651091118",
+      "id": 23,
+      "status": "active"
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import {
     ReferenceInput,
     SimpleForm,
     TextInput,
-    BooleanInput,
+    SelectInput,
     DateInput,
   } from "react-admin";
   
@@ -13,7 +13,13 @@ import {
         <TextInput source="title" />
         <DateInput source="publishedAt" fullWidth />
         <ReferenceInput source="userId" reference="users" />
-        <BooleanInput source="status" valueLabelTrue="published" valueLabelFalse="draft" />
+        <SelectInput
+        source="status"
+        choices={[
+          { id: 'published', name: 'Published' },
+          { id: 'draft', name: 'Draft' },
+        ]}
+      />
       </SimpleForm>
     </Create>
   );

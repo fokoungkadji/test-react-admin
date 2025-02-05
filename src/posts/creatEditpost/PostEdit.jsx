@@ -2,7 +2,7 @@ import {
   Edit,
   ReferenceInput,
   DateInput,
-  BooleanInput,
+  SelectInput,
   SimpleForm,
   TextField,
   TextInput,
@@ -16,7 +16,13 @@ export const PostEdit = () => (
         <TextField source="name" />
       </ReferenceInput>
       <DateInput source="publishedAt" />
-      <BooleanInput source="status" />
+      <SelectInput
+        source="status"
+        choices={[
+          { id: 'published', name: 'Published' },
+          { id: 'draft', name: 'Draft' },
+        ]}
+      />
     </SimpleForm>
   </Edit>
 );
