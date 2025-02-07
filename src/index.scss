@@ -1,5 +1,4 @@
 @import 'style/allColor.scss';
-@import 'style/fonctionStyle.scss';
 
 /* body {
   margin: 0;
@@ -37,7 +36,9 @@ code {
 
 
 // sidebar
-.css-1v4eopd-MuiDrawer-docked-RaSidebar-root .MuiPaper-root,.css-h8pb8z-MuiDrawer-docked-RaSidebar-root .MuiPaper-root{
+.css-1v4eopd-MuiDrawer-docked-RaSidebar-root .MuiPaper-root,
+.css-h8pb8z-MuiDrawer-docked-RaSidebar-root .MuiPaper-root
+{
   background-color: #DFE0DF !important;
 
   .RaSidebar-fixed{
@@ -56,10 +57,6 @@ code {
 }
 
 
-// all icons
-// .css-1umw9bq-MuiSvgIcon-root{
-//   fill: $primary-color !important;
-// }
 
 .css-1tz8rwi-RaLoginForm-root .RaLoginForm-button{
   background-color: $primary-color ;

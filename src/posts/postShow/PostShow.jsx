@@ -2,7 +2,6 @@ import {
     Show,
     TextField,
     ReferenceField,
-    BooleanField,
     DateField,
     SimpleShowLayout,
   } from "react-admin";
@@ -15,7 +14,7 @@ import {
         <TextField source="name" />
       </ReferenceField>
       <DateField source="publishedAt" />
-      <BooleanField source="status" valueLabelTrue="published" valueLabelFalse="draft" />
+      <TextField source="status" />
     </SimpleShowLayout>
     </Show>
   );

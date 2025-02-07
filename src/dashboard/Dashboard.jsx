@@ -4,15 +4,14 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, PieChart, Pie, Cell, Resp
 import { Card, CardContent, Typography, Grid } from '@mui/material';
 
 const Dashboard = () => {
-  // Récupérer les données des posts
+  // Récupération des données des posts
   const { data: posts, isLoading: postsLoading } = useGetList('posts');
-  // Récupérer les données des utilisateurs
+  // Récupération des données des utilisateurs
   const { data: users, isLoading: usersLoading } = useGetList('users');
 
   if (postsLoading || usersLoading) {
     return <div>Loading...</div>;
   }
-
   // Calculer le nombre de posts par utilisateur
   const postsPerUser = users.map(user => {
     const userPosts = posts.filter(post => post.userId === user.id);
@@ -37,7 +36,10 @@ const Dashboard = () => {
         Dashboard
       </Typography>
 
-      {/* Statistiques */}
+      {/* 
+      xs={12} : Sur les très petits écrans , la carte occupe 12 colonnes sur 12.
+      sm={6} : Sur les petits écrans , l'élément occupe 6 colonnes sur 12.
+      md={4} : Sur les écrans moyens , l'élément occupe 4 colonnes sur 12. */}
       <Grid container spacing={3}>
         <Grid item xs={12} sm={6} md={4}>
           <Card>

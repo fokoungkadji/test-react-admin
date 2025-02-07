@@ -10,8 +10,8 @@ const BulkDeactivateButton = () => {
 
   // Utilisation de useUpdateMany pour mettre à jour plusieurs utilisateurs
   const [updateMany, { isLoading }] = useUpdateMany(
-    'users', // Resource
-    { ids: selectedIds, data: { status: 'inactive' } }, // Payload
+    'users', 
+    { ids: selectedIds, data: { status: 'inactive' } }, 
     {
       onSuccess: () => {
         notify('Utilisateurs desactivé avec success', { type: 'success' }); // Notification de succès
@@ -19,7 +19,7 @@ const BulkDeactivateButton = () => {
         unselectAll(); // Désélectionner les utilisateurs
       },
       onError: (error) => {
-        notify(`Error: ${error.message}`, { type: 'error' }); // Notification d'erreur
+        notify(`Error: Une érreur c'est produite`, { type: 'error' }); // Notification d'erreur
       },
     }
   );
@@ -29,7 +29,7 @@ const BulkDeactivateButton = () => {
   const handleDialogClose = () => setOpen(false); // Fermer la boîte de dialogue
   const handleConfirm = () => {
     updateMany(); // Exécuter l'action de désactivation
-    setOpen(false); // Fermer la boîte de dialogue
+    setOpen(false); 
   };
 
   return (

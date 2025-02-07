@@ -11,7 +11,7 @@ export const UserList = (props) => (
         <TextField source="name" />
         <EmailField source="email" style={{ textDecoration: 'none' }} />
         <TextField source="phone" />
-        <TextField source="status" /> {/* Affichez le statut de l'utilisateur */}
+        <TextField source="status" /> 
       </Datagrid>
     </List>
   );

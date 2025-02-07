@@ -2,7 +2,7 @@ import * as React from 'react';
 import {
     TextField,
     Show,
-    SimpleShowLayout
+    SimpleShowLayout,
 } from 'react-admin';
 
 
@@ -13,6 +13,7 @@ export const UserShow = (props) => (
             <TextField source="id" />
             <TextField source="name" />
             <TextField source="email" />
+            <TextField source="status"/>
         </SimpleShowLayout>
     </Show>
 );

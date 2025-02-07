@@ -10,16 +10,25 @@ import {
   ReferenceInput,
   SelectInput,
   TextInput,
+  useRecordContext,
 } from 'react-admin';
 import { Chip } from '@mui/material';
 
 // Composant de filtre
 const PostFilter = (props) => (
-  <Filter {...props}>
-    <TextInput label="Search" source="q" alwaysOn />
+
+  //{...props} : je passe toutes les propriétés reçues par PostFilter au composant Filter.
+  <Filter {...props}> 
+  
+    {/* 
+        alwaysOn : Le champ de recherche doit toujours être visible 
+        "q" : Est la clé qui sera utilisée pour envoyer la valeur du champ dans la requête de filtrage.
+    */}
+    <TextInput label="Search" source="q" alwaysOn /> 
     <ReferenceInput label="Author" source="userId" reference="users" alwaysOn>
       <SelectInput optionText="name" />
     </ReferenceInput>
+
     <SelectInput
       source="status"
       choices={[
@@ -33,17 +42,24 @@ const PostFilter = (props) => (
 
 // Composant personnalisé pour le statut
 
-const StatusField = ({ record }) => {
-  if (!record) return null;
+const StatusField = () => {
 
+  const record = useRecordContext(); // Utilisation d'un hook pour accéder à "record"
+
+  if (!record) return null;  //Si record n'est pas vide alors...
+
+  // Si status est égal à "published", la valeur de statusColor sera "success" sinon "default".
   const statusColor = record.status === 'published' ? 'success' : 'default';
+
+  // Si la condition est vraie, la valeur de statusLabel sera "Published" sinon "Draft".
   const statusLabel = record.status === 'published' ? 'Published' : 'Draft';
 
   return (
+    // Un composant de Material UI pour afficher le statut avec une couleur.
     <Chip
       label={statusLabel}
       color={statusColor}
-      variant="outlined"
+
     />
   );
 };
@@ -54,61 +70,24 @@ export const PostList = (props) => (
   <List {...props} perPage={10} sort={{ field: 'publishedAt', order: 'DESC' }} filters={<PostFilter />} >
 
     <Datagrid rowClick="edit" >
-      <TextField source="title" sortable />
-      <ReferenceField source="userId" reference="users" linkType="show" >
+      <TextField source="title"/>
+
+      {/*  linkType="show" signifie que cliquer sur le nom de l'auteur ouvrira la
+          vue détaillée de l'utilisateur correspondant.
+          
+      */}
+
+      <ReferenceField label="Author" source="userId" reference="users" linkType="show" >
         <TextField source="name" />
       </ReferenceField>
-      <DateField source="publishedAt" sortable />
-      <TextField source="status" sortable />
-      {/* <StatusField source="status" sortable /> */}
+
+      <DateField source="publishedAt"/>
+
+      {/* sortable: indique que la colonne peut être triée. */}
+      <StatusField source="status" sortable />
+
       <EditButton />
     </Datagrid>
   </List>
 
 );
-
-
-// import * as React from 'react';
-
-// import {
-//   Datagrid,
-//   List,
-//   ReferenceField,
-//   TextField,
-//   EditButton,
-//   DateField,
-//   BooleanField
-// } from "react-admin";
-
-// // const PostFilter = (props) => (
-// //   <React.Fragment>
-// //     <ReferenceInput label="Author" source="userId" reference="users" {...props}>
-// //       <SelectInput optionText="name" />
-// //     </ReferenceInput>
-// //     <SelectInput
-// //       label="Status"
-// //       source="status"
-// //       choices={[
-// //         { id: 'published', name: 'Published' },
-// //         { id: 'draft', name: 'Draft' },
-// //       ]}
-// //       {...props}
-// //     />
-// //   </React.Fragment>
-// // );
-
-// export const PostList = (props) => (
-//   <List {...props} perPage={10} sort={{ field: 'publishedAt', order: 'DESC' }} >
-//     <Datagrid rowClick="edit">
-//       <TextField source="title" />
-//       <ReferenceField source="userId" reference="users" linkType="show">
-//         <TextField source="name" />
-//       </ReferenceField>
-//       <DateField source="publishedAt" />
-//       <TextField source="status" style={{
-//           color: record => record.status === 'published' ? 'green' : 'gray'
-//         }} />
-//       <EditButton />
-//     </Datagrid>
-//   </List>
-// );

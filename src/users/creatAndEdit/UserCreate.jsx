@@ -3,6 +3,7 @@ import {
     SimpleForm,
     Create,
     TextInput,
+    SelectInput,
 } from 'react-admin';
 
 
@@ -12,6 +13,13 @@ export const UserCreate = (props) => (
             <TextInput source="name" />
             <TextInput source="email" type="email" />
             <TextInput source="phone" />
+            <SelectInput
+                source="status"
+                choices={[
+                    { id: 'published', name: 'Published' },
+                    { id: 'draft', name: 'Draft' },
+                ]}
+            />
         </SimpleForm>
     </Create>
 );

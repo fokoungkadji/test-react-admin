@@ -1,4 +1,4 @@
-import { AUTH_LOGIN, AUTH_LOGOUT, AUTH_CHECK, AUTH_ERROR, AUTH_GET_PERMISSIONS } from 'react-admin';
+// import { AUTH_LOGIN, AUTH_LOGOUT, AUTH_CHECK, AUTH_ERROR, AUTH_GET_PERMISSIONS } from 'react-admin';
 
 const authProvider = {
     login: ({ username, password }) => {
@@ -9,7 +9,7 @@ const authProvider = {
             localStorage.setItem('user', 'bezout kadji');
             return Promise.resolve();
         }
-        // throw new Error("mot de passe ou nom d'utilisateur incorrect");
+        
         return new Promise((resolve, reject) => setTimeout(reject, 1000));
     },
     logout: () => {
@@ -30,7 +30,6 @@ const authProvider = {
 
         } else if (error.status === 403) {
 
-
             alert("Vous n'avez pas les droits nécessaires pour effectuer cette action.");
         } else {
 
@@ -38,10 +37,7 @@ const authProvider = {
             alert('Une erreur est survenue.');
         }
     },
-    getPermissions: () => {
-        const role = localStorage.getItem('role');
-        return Promise.resolve(role);
-    },
+    
     getIdentity: () => {
         const token = localStorage.getItem('token');
 
