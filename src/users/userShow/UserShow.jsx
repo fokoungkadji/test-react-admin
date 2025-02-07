@@ -4,10 +4,10 @@ import {
     Show,
     SimpleShowLayout,
 } from 'react-admin';
+import {withThemeProvider} from "../../withThemeProvider";
 
 
-
-export const UserShow = (props) => (
+export const ShowUser = (props) => (
     <Show {...props}>
         <SimpleShowLayout>
             <TextField source="id" />
@@ -17,3 +17,5 @@ export const UserShow = (props) => (
         </SimpleShowLayout>
     </Show>
 );
+
+export const UserShow = withThemeProvider(ShowUser)

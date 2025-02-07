@@ -2,7 +2,7 @@
 // Thème personnalisé
 export const lightTheme = {
   palette: {
-    mode: 'light', // Mode clair par défaut
+    mode: 'light', // Mode clair
     primary: {
       main: '#FF7120', 
     },
@@ -40,7 +40,7 @@ export const darkTheme = {
   palette: {
     mode: 'dark', // Mode sombre
     primary: {
-      main: '#fff', // Couleur primaire orange
+      main: '#fff', // Couleur primaire
     },
     secondary: {
       main: '#0A0B2E', // Couleur secondaire 

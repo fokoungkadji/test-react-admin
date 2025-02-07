@@ -5,9 +5,10 @@ import {
     TextInput,
     SelectInput,
 } from 'react-admin';
+import {withThemeProvider} from "../../withThemeProvider";
 
 
-export const UserEdit = (props) => (
+export const EditUser = (props) => (
     <Edit {...props}>
         <SimpleForm>
             <TextInput disabled source="id" />
@@ -23,3 +24,5 @@ export const UserEdit = (props) => (
         </SimpleForm>
     </Edit>
 );
+
+export const UserEdit = withThemeProvider(EditUser)

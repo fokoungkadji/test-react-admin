@@ -11,3 +11,9 @@ export const withThemeProvider = (WrappedComponent) => {
         </ThemesContext.Provider>
     }
 }
+
+// ThemesContext.Provider: Fournit themeConfigs à tous les composants enfants via  ThemesContext.
+// ThemeProvider :Applique le thème à la partie encapsulée.
+
+
+// je me sert de withThemeProvider pour injecter le thème dans  l'application

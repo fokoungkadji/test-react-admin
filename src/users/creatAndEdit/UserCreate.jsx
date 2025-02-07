@@ -24,5 +24,5 @@ export const CreateUser = (props) => (
         </SimpleForm>
     </Create>
 );
-
+ 
 export const UserCreate = withThemeProvider(CreateUser)

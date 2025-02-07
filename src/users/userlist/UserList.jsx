@@ -1,10 +1,11 @@
 import * as React from 'react';
 import { List, Datagrid,TextField, EmailField,} from 'react-admin';
 import BulkDeactivateButton from './BulkDeactivateButton';
+import {withThemeProvider} from "../../withThemeProvider";
 
 
 
-export const UserList = (props) => (
+export const ListUser = (props) => (
     <List {...props} >
       <Datagrid bulkActionButtons={<BulkDeactivateButton />}>
         <TextField source="id" />
@@ -15,3 +16,5 @@ export const UserList = (props) => (
       </Datagrid>
     </List>
   );
+
+  export const UserList = withThemeProvider(ListUser)
