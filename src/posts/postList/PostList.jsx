@@ -1,18 +1,19 @@
 import * as React from 'react';
 import {
-  List,
-  Datagrid,
-  TextField,
-  ReferenceField,
-  DateField,
-  EditButton,
-  Filter,
-  ReferenceInput,
-  SelectInput,
-  TextInput,
-  useRecordContext,
+    List,
+    Datagrid,
+    TextField,
+    ReferenceField,
+    DateField,
+    EditButton,
+    Filter,
+    ReferenceInput,
+    SelectInput,
+    TextInput,
+    useRecordContext,
 } from 'react-admin';
 import { Chip } from '@mui/material';
+import {withThemeProvider} from "../../withThemeProvider";
 
 // Composant de filtre
 const PostFilter = (props) => (
@@ -64,30 +65,32 @@ const StatusField = () => {
   );
 };
 
-// Composant principal PostList
-export const PostList = (props) => (
+// Composant principal Post
+const Posts = (props) => (
 
-  <List {...props} perPage={10} sort={{ field: 'publishedAt', order: 'DESC' }} filters={<PostFilter />} >
+      <List {...props} perPage={10} sort={{ field: 'publishedAt', order: 'DESC' }} filters={<PostFilter />} >
 
-    <Datagrid rowClick="edit" >
-      <TextField source="title"/>
+          <Datagrid rowClick="edit" >
+              <TextField source="title"/>
 
-      {/*  linkType="show" signifie que cliquer sur le nom de l'auteur ouvrira la
-          vue détaillée de l'utilisateur correspondant.
-          
-      */}
+              {/*  linkType="show" signifie que cliquer sur le nom de l'auteur ouvrira la
+      vue détaillée de l'utilisateur correspondant.
 
-      <ReferenceField label="Author" source="userId" reference="users" linkType="show" >
-        <TextField source="name" />
-      </ReferenceField>
+  */}
 
-      <DateField source="publishedAt"/>
+              <ReferenceField label="Author" source="userId" reference="users" linkType="show" >
+                  <TextField source="name" />
+              </ReferenceField>
 
-      {/* sortable: indique que la colonne peut être triée. */}
-      <StatusField source="status" sortable />
+              <DateField source="publishedAt"/>
 
-      <EditButton />
-    </Datagrid>
-  </List>
+              {/* sortable: indique que la colonne peut être triée. */}
+              <StatusField source="status" sortable />
+
+              <EditButton />
+          </Datagrid>
+      </List>
 
 );
+
+export const PostList = withThemeProvider(Posts);

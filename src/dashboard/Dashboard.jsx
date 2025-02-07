@@ -2,8 +2,9 @@ import * as React from 'react';
 import { useGetList } from 'react-admin';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 import { Card, CardContent, Typography, Grid } from '@mui/material';
+import {withThemeProvider} from "../withThemeProvider";
 
-const Dashboard = () => {
+const Home = () => {
   // Récupération des données des posts
   const { data: posts, isLoading: postsLoading } = useGetList('posts');
   // Récupération des données des utilisateurs
@@ -101,4 +102,4 @@ const Dashboard = () => {
   );
 };
 
-export default Dashboard;
+export const Dashboard = withThemeProvider(Home);

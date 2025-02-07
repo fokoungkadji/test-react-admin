@@ -6,8 +6,9 @@ import {
   SelectInput,
   DateInput,
 } from "react-admin";
+import {withThemeProvider} from "../../withThemeProvider";
 
-export const PostCreate = () => (
+export const CreatePost = () => (
   <Create>
     <SimpleForm>
       <TextInput source="title" />
@@ -23,3 +24,5 @@ export const PostCreate = () => (
     </SimpleForm>
   </Create>
 );
+
+export const PostCreate = withThemeProvider(CreatePost);

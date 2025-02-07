@@ -5,9 +5,10 @@ import {
     TextInput,
     SelectInput,
 } from 'react-admin';
+import {withThemeProvider} from "../../withThemeProvider";
 
 
-export const UserCreate = (props) => (
+export const CreateUser = (props) => (
     <Create {...props}>
         <SimpleForm>
             <TextInput source="name" />
@@ -23,3 +24,5 @@ export const UserCreate = (props) => (
         </SimpleForm>
     </Create>
 );
+
+export const UserCreate = withThemeProvider(CreateUser)

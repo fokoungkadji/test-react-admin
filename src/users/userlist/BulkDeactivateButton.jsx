@@ -20,7 +20,7 @@ const BulkDeactivateButton = () => {
       },
       onError: (error) => {
         notify(`Error: Une érreur c'est produite`, { type: 'error' }); // Notification d'erreur
-      },
+      }, 
     }
   );
 

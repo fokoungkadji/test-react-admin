@@ -1,14 +1,13 @@
-import { createTheme } from '@mui/material/styles';
 
 // Thème personnalisé
-export const lightTheme = createTheme({
+export const lightTheme = {
   palette: {
     mode: 'light', // Mode clair par défaut
     primary: {
-      main: '#FF7120', // Couleur primaire orange
+      main: '#FF7120', 
     },
     secondary: {
-      main: '#0A0B2E', // Couleur secondaire bleu foncé
+      main: '#0A0B2E',
     },
     background: {
       default: '#f5f5f5', // Fond clair
@@ -16,7 +15,7 @@ export const lightTheme = createTheme({
     },
     text: {
       primary: '#0A0B2E', // Texte principal
-      secondary: '#FF7120', // Texte secondaire
+      secondary: '#0A0B2E', // Texte secondaire
     },
   },
   typography: {
@@ -34,20 +33,20 @@ export const lightTheme = createTheme({
       fontWeight: 400,
     },
   },
-});
+};
 
 // Thème sombre
-export const darkTheme = createTheme({
+export const darkTheme = {
   palette: {
     mode: 'dark', // Mode sombre
     primary: {
-      main: '#FF7120', // Couleur primaire orange
+      main: '#fff', // Couleur primaire orange
     },
     secondary: {
-      main: '#0A0B2E', // Couleur secondaire bleu foncé
+      main: '#0A0B2E', // Couleur secondaire 
     },
     background: {
-      default: '#121212', // Fond sombre
+      default: '#0A0B2E', 
       paper: '#1e1e1e', // Fond des cartes
     },
     text: {
@@ -70,4 +69,9 @@ export const darkTheme = createTheme({
       fontWeight: 400,
     },
   },
-});
+};
+
+export const themeConfigs = {
+  darkTheme: darkTheme,
+  lightTheme: lightTheme
+}

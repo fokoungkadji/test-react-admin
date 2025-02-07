@@ -7,8 +7,9 @@ import {
   TextField,
   TextInput,
 } from "react-admin";
+import {withThemeProvider} from "../../withThemeProvider";
 
-export const PostEdit = () => (
+const EditPost = () => (
   <Edit>
     <SimpleForm>
       <TextInput source="title" />
@@ -26,3 +27,5 @@ export const PostEdit = () => (
     </SimpleForm>
   </Edit>
 );
+
+export const PostEdit = withThemeProvider(EditPost)

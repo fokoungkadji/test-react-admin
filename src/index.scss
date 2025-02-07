@@ -1,68 +1,68 @@
-@import 'style/allColor.scss';
+// @import 'style/allColor.scss';
 
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+// /* body {
+//   margin: 0;
+//   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+//     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+//     sans-serif;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
-
-
-// navbar
-.css-m96m1e-MuiPaper-root-MuiAppBar-root-RaAppBar-root{
-  background-color: $navbar-color !important;
-
-  .css-160m840-MuiButtonBase-root-MuiIconButton-root-RaSidebarToggleButton-root {
-    background-color: rgba(165, 42, 42, 0.097);
-
-  }
-
-  .css-6u3hli-RaUserMenu-root{
-    background-color: rgba(165, 42, 42, 0.097);
-    color: $secondary-color !important;
-  }
-
-  .css-1hbwnqi-MuiTypography-root{
-    color: $primary-color ;
-  }
-}
+// code {
+//   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+//     monospace;
+// } */
 
 
-// sidebar
-.css-1v4eopd-MuiDrawer-docked-RaSidebar-root .MuiPaper-root,
-.css-h8pb8z-MuiDrawer-docked-RaSidebar-root .MuiPaper-root
-{
-  background-color: #DFE0DF !important;
+// // navbar
+// .css-m96m1e-MuiPaper-root-MuiAppBar-root-RaAppBar-root{
+//   background-color: $navbar-color !important;
 
-  .RaSidebar-fixed{
-    ul{
-      a{
-        color: $secondary-color;
-      }
-    }
-  }
-}
+//   .css-160m840-MuiButtonBase-root-MuiIconButton-root-RaSidebarToggleButton-root {
+//     background-color: rgba(165, 42, 42, 0.097);
 
+//   }
 
-// home page
-.css-1n2f7rh-RaLayout-root .RaLayout-content{
-  background-color: #dfe0df74 !important;
-}
+//   .css-6u3hli-RaUserMenu-root{
+//     background-color: rgba(165, 42, 42, 0.097);
+//     color: $secondary-color !important;
+//   }
+
+//   .css-1hbwnqi-MuiTypography-root{
+//     color: $primary-color ;
+//   }
+// }
 
 
+// // sidebar
+// .css-1v4eopd-MuiDrawer-docked-RaSidebar-root .MuiPaper-root,
+// .css-h8pb8z-MuiDrawer-docked-RaSidebar-root .MuiPaper-root
+// {
+//   background-color: #DFE0DF !important;
 
-.css-1tz8rwi-RaLoginForm-root .RaLoginForm-button{
-  background-color: $primary-color ;
-  font-weight: 900;
-}
+//   .RaSidebar-fixed{
+//     ul{
+//       a{
+//         color: $secondary-color;
+//       }
+//     }
+//   }
+// }
 
-.css-c1bgk0-RaLogin-root{
-  background-image: radial-gradient(circle at 50% 14em, $secondary-color 0%, $secondary-color 60%, $secondary-color 100%) !important;
-}
+
+// // home page
+// .css-1n2f7rh-RaLayout-root .RaLayout-content{
+//   background-color: #dfe0df74 !important;
+// }
+
+
+
+// .css-1tz8rwi-RaLoginForm-root .RaLoginForm-button{
+//   background-color: $primary-color ;
+//   font-weight: 900;
+// }
+
+// .css-c1bgk0-RaLogin-root{
+//   background-image: radial-gradient(circle at 50% 14em, $secondary-color 0%, $secondary-color 60%, $secondary-color 100%) !important;
+// }

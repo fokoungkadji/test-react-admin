@@ -1,6 +1,8 @@
-// import { AUTH_LOGIN, AUTH_LOGOUT, AUTH_CHECK, AUTH_ERROR, AUTH_GET_PERMISSIONS } from 'react-admin';
+
 
 const authProvider = {
+    
+
     login: ({ username, password }) => {
         // Logique de connexion simplifiée 
         if (username === 'admin' && password === 'password') {
@@ -39,7 +41,6 @@ const authProvider = {
     },
     
     getIdentity: () => {
-        const token = localStorage.getItem('token');
 
         // Récupérer les informations de l'utilisateur à partir du token
 
